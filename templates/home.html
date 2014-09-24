@@ -1,0 +1,40 @@
+<div class="container" ng-controller="appctrl">
+
+	<div class="row">
+		<div class="col-sm-12 col-lg-12" style="color:#f79; margin-bottom:30px; text-align:center;">
+			<h3>A sample notes app</h3>
+		</div>
+		
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-3 col-lg-3 sidepane" >
+
+			<div class="row cat_head">
+				<div style="text-align:center;" class="col-sm-12 col-lg-12">
+					<h3>categories</h3>
+				</div>
+
+			</div>
+			<div class="row">
+				<ul class="cat nav nav-sidebar">
+					<li ng-repeat="category in categories">
+						<a href="#" ng-click="setcurrentcat(category)">{{category.name}}</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+
+		{{cat}}
+		<div class="col-sm-offset-1 col-lg-offset-1 col-sm-7 col-lg-7" >
+				<div class="mainpane" ng-repeat="note in notes | filter:cat:true">
+					<a href="{{note.body}}">{{note.title}}</a>
+					
+				</div>
+		</div>
+
+	</div>
+
+</div>

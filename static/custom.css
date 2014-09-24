@@ -1,0 +1,21 @@
+body{
+	background-color: #E7F5EF !important;
+}
+
+.sidepane{
+	border-right: 1px solid #E7E1EF;
+
+}
+
+.cat{
+	padding: 20px;
+	font-size: 18px
+}
+
+.cat_head{
+	background-color: #ddd;
+}
+
+.mainpane{
+	padding: 20px;
+}
