@@ -4,7 +4,7 @@ demo.config(function($routeProvider){
 
 	$routeProvider.when('/',
 	{
-		templateUrl: 'templates/home.html',
+		templateUrl: 'static/templates/home.html',
 		controller: 'appctrl'})
 
 	.otherwise(
